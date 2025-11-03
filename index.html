@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Capacitor Manufacturer specializing in high-quality Snap-in Capacitors, Screw Terminal Capacitors, Aluminum Electrolytic Capacitors with excellent performance for industrial and electronic applications. Worldwide shipping and custom solutions available.">
-    <meta name="keywords" content="capacitor manufacturer, snap-in capacitor, screw terminal capacitor, aluminum electrolytic capacitor, electrolytic capacitor supplier, high voltage capacitor, low esr capacitor, long life capacitor, industrial capacitor, electronic components manufacturer, capacitor factory, CD292 capacitor, CD293 capacitor, CD135 capacitor, CD136 capacitor, worldwide capacitor supplier, bulk capacitors, custom capacitor solutions">
-    <title>Capacitor Manufacturer - HUAYU</title>
+    <meta name="description" content="Professional aluminum electrolytic capacitor manufacturer with 38+ years experience. High-quality snap-in and screw terminal capacitors for power supplies, industrial, renewable energy, automotive and medical applications worldwide.">
+    <meta name="keywords" content="capacitor manufacturer, aluminum electrolytic capacitor, snap-in capacitor, screw terminal capacitor, high voltage capacitor, low esr capacitor, long life capacitor, industrial capacitor, renewable energy capacitor, automotive capacitor, medical capacitor, capacitor factory, CD292 capacitor, CD293 capacitor, CD135 capacitor, CD136 capacitor, worldwide capacitor supplier, bulk capacitors, custom capacitor solutions">
+    <title>Professional Aluminum Electrolytic Capacitor Manufacturer - HUAYU</title>
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Professional Aluminum Electrolytic Capacitor Manufacturer - HUAYU">
+    <meta itemprop="description" content="Professional aluminum electrolytic capacitor manufacturer with 38+ years experience. High-quality snap-in and screw terminal capacitors for power supplies, industrial, renewable energy, automotive and medical applications worldwide.">
+    <meta itemprop="image" content="https://capacitormanufacturer.com/images/HUAYU.jpg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Professional Aluminum Electrolytic Capacitor Manufacturer - HUAYU">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://capacitormanufacturer.com">
+    <meta property="og:image" content="https://capacitormanufacturer.com/images/HUAYU.jpg">
+    <meta property="og:description" content="Professional aluminum electrolytic capacitor manufacturer with 38+ years experience. High-quality snap-in and screw terminal capacitors for power supplies, industrial, renewable energy, automotive and medical applications worldwide.">
+    <meta property="og:site_name" content="HUAYU Capacitor Manufacturer">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Aluminum Electrolytic Capacitor Manufacturer - HUAYU">
+    <meta name="twitter:description" content="Professional aluminum electrolytic capacitor manufacturer with 38+ years experience. High-quality snap-in and screw terminal capacitors for power supplies, industrial, renewable energy, automotive and medical applications worldwide.">
+    <meta name="twitter:image" content="https://capacitormanufacturer.com/images/HUAYU.jpg">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://capacitormanufacturer.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
     <!-- Google Analytics GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RN0916472"></script>
@@ -225,50 +243,78 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 100%;
+            top: 100%; /* 移除间隙，确保无缝过渡 */
             right: 0;
-            min-width: 160px;
+            min-width: 220px; /* 增加最小宽度，确保文本不换行 */
             background-color: white;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             z-index: 1000;
-            border-radius: 4px;
+            border-radius: 8px;
             overflow: hidden;
+            border: 1px solid #e2e8f0; /* 添加边框 */
+            padding: 4px 0; /* 增加内边距，让整体更宽松 */
         }
         
         /* Mobile responsive styles */
         @media (max-width: 768px) {
             .dropdown-content {
                 position: relative;
-                top: 0;
+                top: 8px; /* 保持与桌面版相似的间距 */
                 right: 0;
                 width: 100%;
                 min-width: auto;
-                box-shadow: none;
-                border-radius: 0;
-                background-color: #f8f9fa;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 6px;
+                background-color: white;
+                border: 1px solid #e2e8f0;
+                padding: 4px 0;
+            }
+            
+            .dropdown-item {
+                padding: 12px 16px; /* 在移动设备上稍微减小内边距 */
+                font-size: 15px;
+            }
+            
+            .dropdown-item:hover {
+                transform: none; /* 在移动设备上移除位移效果 */
             }
         }
         
-        .nav-item:hover .dropdown-content {
+        /* 使用更可靠的悬停检测方式 */
+        .nav-item:hover .dropdown-content,
+        .dropdown-content.show {
+            display: block;
+        }
+        
+        /* 确保当鼠标悬停在下拉菜单上时菜单仍然保持显示 */
+        .dropdown-content:hover {
             display: block;
         }
         
         .dropdown-item {
             display: flex;
             align-items: center;
-            padding: 12px 16px;
+            padding: 14px 18px; /* 增加内边距，扩大点击区域 */
             text-decoration: none;
             color: var(--text-dark);
-            transition: background-color 0.3s;
+            transition: all 0.2s ease-in-out; /* 平滑过渡所有属性 */
+            border-radius: 6px;
+            margin: 0; /* 移除外边距，确保无缝过渡 */
+            font-weight: 500;
+            white-space: nowrap; /* 确保文本不换行 */
         }
         
         .dropdown-item:hover {
-            background-color: #f8f9fa;
-            color: var(--primary-color);
+            background-color: var(--primary-color); /* 使用主题色作为背景 */
+            color: white; /* 文字变为白色 */
+            transform: translateX(4px); /* 轻微右移，增加交互感 */
         }
         
         .dropdown-item i {
-            margin-right: 10px;
+            margin-right: 12px;
+            font-size: 16px; /* 增加图标大小 */
+            width: 18px; /* 固定图标宽度，保持对齐 */
+            text-align: center;
         }
 
         .mobile-menu-btn {
@@ -1561,8 +1607,8 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Solution for Power Supply Design Challenges</h1>
-                <p>We solve lifetime, stability, and cost problems in power electronics with our high-performance aluminum electrolytic capacitors</p>
+                <h1>High-Quality Aluminum Electrolytic Capacitor Manufacturer</h1>
+                <p>38+ years of expertise in producing reliable snap-in and screw terminal capacitors for global power supply, industrial, renewable energy, automotive, and medical applications.
                 <div class="cta-buttons">
                     <a href="#products" class="btn btn-primary">
                         Explore Solutions
@@ -1581,14 +1627,14 @@
     <section class="about" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>Power Supply Design Solutions Provider</h2>
-                <p>38+ years of expertise solving power electronics challenges with reliable capacitor technology</p>
+                <h2>Professional Capacitor Manufacturer Since 1987</h2>
+                <p>38+ years of expertise solving power electronics challenges with reliable aluminum electrolytic capacitor technology
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <div class="about-intro-section">
-                        <p>HUAYU specializes in the design, development, and production of high-quality aluminum electrolytic capacitors for global customers.</p>
-                    </div>
+                    <p>HUAYU is a leading aluminum electrolytic capacitor manufacturer specializing in the design, development, and production of high-quality capacitors for global customers across industrial, renewable energy, automotive, medical, and consumer electronics sectors.</p>
+                </div>
                     
                     <div class="about-highlights">
                         <div class="highlight-item">
@@ -1610,8 +1656,8 @@
                     </div>
                     
                     <div class="about-intro-section">
-                        <p>Our solutions range from industrial power supplies to consumer electronics, delivering consistent quality and performance.</p>
-                    </div>
+                    <p>Our aluminum electrolytic capacitor solutions range from industrial power supplies to consumer electronics, renewable energy systems, automotive electronics, and medical equipment, delivering consistent quality, reliability, and performance worldwide.</p>
+                </div>
                 </div>
                 <div class="about-image">
                     <img src="https://capacitormanufacturer.com/images/HUAYU.jpg" alt="Capacitor Manufacturer Factory">
@@ -1624,8 +1670,8 @@
     <section class="products" id="products">
         <div class="container">
             <div class="section-title">
-                <h2>Advanced Capacitor Solutions</h2>
-                <p>Engineered to solve lifetime, stability, and cost challenges in power supply design</p>
+                <h2>High-Performance Aluminum Electrolytic Capacitors</h2>
+                <p>Engineered to solve lifetime, stability, and cost challenges in power supply design with premium materials and advanced manufacturing techniques
             </div>
             <div class="product-grid">
                 <div class="product-card">
@@ -1636,8 +1682,8 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>Snap-in Capacitors</h3>
-                        <p>High performance snap-in type aluminum electrolytic capacitors with easy PCB mounting and high capacitance values in a compact design.</p>
+                        <h3>Snap-in Aluminum Electrolytic Capacitors</h3>
+                    <p>High performance snap-in type aluminum electrolytic capacitors with easy PCB mounting and high capacitance values in a compact design. Ideal for power supplies, UPS systems, and industrial electronics requiring reliable performance and long operational life.
                         
                         <div class="product-models">
                             <h4>Capacitor Series</h4>
@@ -1701,8 +1747,8 @@
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3>Screw Terminal Capacitors</h3>
-                        <p>Robust screw terminal capacitors designed for high power applications requiring high capacitance and ripple current capability.</p>
+                        <h3>Screw Terminal Aluminum Electrolytic Capacitors</h3>
+                    <p>Robust screw terminal aluminum electrolytic capacitors designed for high power applications requiring high capacitance and ripple current capability. Perfect for industrial power supplies, renewable energy systems, and high-demand electronic equipment that needs superior reliability and performance.
                         
                         <div class="product-models">
                             <h4>Capacitor Series</h4>
@@ -1769,8 +1815,8 @@
     <section class="technical-docs" id="technical-docs">
         <div class="container">
             <div class="section-title">
-                <h2>Technical Documents</h2>
-                <p>Access our comprehensive documentation for product specifications, usage guidelines, and dimensional information</p>
+                <h2>Capacitor Technical Documents & Resources</h2>
+                <p>Access our comprehensive documentation for aluminum electrolytic capacitor specifications, usage guidelines, and dimensional information for engineers and designers
             </div>
             <div class="docs-grid">
                 <div class="doc-card">
@@ -1861,8 +1907,8 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Trusted by Leading Companies Worldwide</h2>
-                <p>Hear from businesses that trust us as their preferred capacitor manufacturer</p>
+                <h2>Global Capacitor Manufacturer Trusted Worldwide</h2>
+                <p>Hear from businesses that trust us as their preferred aluminum electrolytic capacitor manufacturer for quality and reliability
             </div>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
@@ -1873,11 +1919,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"We have been working with this capacitor manufacturer for 5 years and their products consistently meet our high standards. The quality and reliability of their snap-in capacitors have significantly improved our product performance."</p>
+                    <p class="testimonial-text">"We have been working with HUAYU capacitor manufacturer for 5 years and their aluminum electrolytic capacitors consistently meet our high standards. The quality and reliability of their snap-in capacitors have significantly improved our product performance. Their competitive pricing and on-time delivery make them our preferred supplier."</p>
                     <div class="testimonial-author">
                         <div>
                             <h4>John Smith</h4>
-                         
+                            <p>Power Supply Engineer, Industrial Solutions Inc.</p>
                         </div>
                     </div>
                 </div>
@@ -1889,11 +1935,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"The technical support team is excellent and always provides quick solutions to our problems. Their engineering expertise helped us select the perfect screw terminal capacitors for our industrial applications."</p>
+                    <p class="testimonial-text">"The technical support team at HUAYU is excellent and always provides quick solutions to our problems. Their engineering expertise helped us select the perfect screw terminal aluminum electrolytic capacitors for our industrial applications. Their long-life capacitors have reduced our maintenance costs significantly."</p>
                     <div class="testimonial-author">
                         <div>
                             <h4>Sarah Johnson</h4>
-                          
+                            <p>Electronics Design Manager, Renewable Power Systems</p>
                         </div>
                     </div>
                 </div>
@@ -1905,8 +1951,8 @@
     <section class="applications">
         <div class="container">
             <div class="section-title">
-                <h2>Capacitor Applications</h2>
-                <p>Our capacitors power a wide range of applications across various industries</p>
+                <h2>Aluminum Electrolytic Capacitor Applications</h2>
+                <p>Our high-quality capacitors power a wide range of applications across various industries with reliable performance
             </div>
             <div class="applications-grid">
                 <div class="application-card">
@@ -1914,8 +1960,8 @@
                         <i class="fas fa-industry"></i>
                     </div>
                     <div class="application-content">
-                        <h3>Industrial Power</h3>
-                        <p>Our capacitors are widely used in industrial power supplies, UPS systems, and motor drives requiring high reliability and performance.</p>
+                    <h3>Industrial Power Capacitors</h3>
+                    <p>Our high-performance aluminum electrolytic capacitors are widely used in industrial power supplies, UPS systems, and motor drives requiring high reliability, long service life, and excellent ripple current handling capabilities.</p>
                         <div class="application-highlight">
                             <i class="fas fa-check"></i> High ripple current handling
                         </div>
@@ -1926,8 +1972,8 @@
                         <i class="fas fa-bolt"></i>
                     </div>
                     <div class="application-content">
-                        <h3>Renewable Energy</h3>
-                        <p>High-performance capacitors for solar inverters, wind power systems, and energy storage applications with long service life.</p>
+                    <h3>Renewable Energy Capacitors</h3>
+                    <p>High-performance aluminum electrolytic capacitors for solar inverters, wind power systems, and energy storage applications with long service life, excellent stability, and reliable performance in challenging environments.</p>
                         <div class="application-highlight">
                             <i class="fas fa-check"></i> Long-term stability
                         </div>
@@ -1938,8 +1984,8 @@
                         <i class="fas fa-tv"></i>
                     </div>
                     <div class="application-content">
-                        <h3>Consumer Electronics</h3>
-                        <p>Compact and reliable snap-in capacitors for TVs, audio equipment, and home appliances requiring high capacitance in small spaces.</p>
+                        <h3>Consumer Electronics Capacitors</h3>
+                        <p>Compact and reliable snap-in aluminum electrolytic capacitors for TVs, audio equipment, and home appliances requiring high capacitance in small spaces with excellent performance and reliability.
                         <div class="application-highlight">
                             <i class="fas fa-check"></i> Compact design
                         </div>
@@ -1950,8 +1996,8 @@
                         <i class="fas fa-car"></i>
                     </div>
                     <div class="application-content">
-                        <h3>Automotive Electronics</h3>
-                        <p>Automotive-grade capacitors designed for harsh environments, suitable for vehicle electronics, charging systems, and EV applications.</p>
+                        <h3>Automotive Electronics Capacitors</h3>
+                        <p>Automotive-grade aluminum electrolytic capacitors designed for harsh environments, suitable for vehicle electronics, charging systems, EV applications, and automotive power supplies requiring high reliability and wide temperature range.
                         <div class="application-highlight">
                             <i class="fas fa-check"></i> Wide temperature range
                         </div>
@@ -1962,8 +2008,8 @@
                         <i class="fas fa-heartbeat"></i>
                     </div>
                     <div class="application-content">
-                        <h3>Medical Equipment</h3>
-                        <p>High-precision capacitors for medical devices, diagnostic equipment, and life support systems requiring exceptional reliability.</p>
+                        <h3>Medical Equipment Capacitors</h3>
+                        <p>High-precision aluminum electrolytic capacitors for medical devices, diagnostic equipment, and life support systems requiring exceptional reliability, stability, and long operational life in critical healthcare applications.
                         <div class="application-highlight">
                             <i class="fas fa-check"></i> Medical-grade reliability
                         </div>
@@ -1974,8 +2020,8 @@
                         <i class="fas fa-wifi"></i>
                     </div>
                     <div class="application-content">
-                        <h3>Telecommunications</h3>
-                        <p>High-frequency capacitors for communication infrastructure, base stations, and network equipment requiring stable performance.</p>
+                        <h3>Telecommunications Capacitors</h3>
+                        <p>High-frequency aluminum electrolytic capacitors for communication infrastructure, base stations, and network equipment requiring stable performance, low ESR characteristics, and continuous operation in demanding environments.
                         <div class="application-highlight">
                             <i class="fas fa-check"></i> Low ESR characteristics
                         </div>
@@ -2002,39 +2048,39 @@
                 </div>
                 <div class="quality-text">
                     <div class="quality-intro">
-                        <p>Quality is our top priority, with strict control measures at every production stage.</p>
+                        <p>Quality is our top priority for aluminum electrolytic capacitors, with strict control measures at every production stage to ensure the highest reliability and performance standards.</p>
                     </div>
                     
                     <div class="quality-steps-grid">
                         <div class="quality-step">
                             <div class="step-number">01</div>
                             <div class="step-content">
-                                <h3>Raw Material Inspection</h3>
-                                <p>Strict testing of all incoming materials to ensure they meet specifications.</p>
+                                <h3>Raw Material Inspection for Capacitors</h3>
+                                <p>Strict testing of all aluminum foil, electrolytes, and components for aluminum electrolytic capacitors to ensure they meet our high specifications.
                             </div>
                         </div>
                         
                         <div class="quality-step">
                             <div class="step-number">02</div>
                             <div class="step-content">
-                                <h3>Process Monitoring</h3>
-                                <p>Real-time monitoring of manufacturing parameters for consistent quality.</p>
+                                <h3>Capacitor Manufacturing Process Monitoring</h3>
+                                <p>Real-time monitoring of critical manufacturing parameters for consistent quality in aluminum electrolytic capacitor production.
                             </div>
                         </div>
                         
                         <div class="quality-step">
                             <div class="step-number">03</div>
                             <div class="step-content">
-                                <h3>Advanced Testing</h3>
-                                <p>Comprehensive testing of all capacitor parameters in our laboratory.</p>
+                                <h3>Advanced Aluminum Electrolytic Capacitor Testing</h3>
+                                <p>Comprehensive testing of capacitance, voltage, ESR, life span, and reliability parameters in our state-of-the-art laboratory.
                             </div>
                         </div>
                         
                         <div class="quality-step">
                             <div class="step-number">04</div>
                             <div class="step-content">
-                                <h3>Final Quality Check</h3>
-                                <p>100% final testing before shipment to guarantee quality standards.</p>
+                                <h3>Final Quality Check for Aluminum Electrolytic Capacitors</h3>
+                                <p>100% final testing of all aluminum electrolytic capacitors before shipment to guarantee the highest quality standards and performance.
                             </div>
                         </div>
                     </div>
@@ -2052,8 +2098,8 @@
     <section class="manufacturing">
         <div class="container">
             <div class="section-title">
-                <h2>Advanced Manufacturing Capability</h2>
-                <p>State-of-the-art facilities and cutting-edge technology for superior capacitor production</p>
+                <h2>Advanced Aluminum Electrolytic Capacitor Manufacturing</h2>
+                <p>State-of-the-art facilities and cutting-edge technology for superior aluminum electrolytic capacitor production with high precision and reliability</p>
             </div>
             
             <!-- Manufacturing Stats -->
@@ -2083,8 +2129,8 @@
                         <i class="fas fa-cogs"></i>
                     </div>
                     <div class="manufacturing-details">
-                        <h3>Automated Production Lines</h3>
-                        <p>State-of-the-art automated assembly lines ensure consistent quality and high production capacity for all capacitor models.</p>
+                        <h3>Automated Aluminum Electrolytic Capacitor Production Lines</h3>
+                        <p>State-of-the-art automated assembly lines ensure consistent quality and high production capacity for all aluminum electrolytic capacitor models, from snap-in to screw terminal types.
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle"></i> Robotic assembly stations</li>
                             <li><i class="fas fa-check-circle"></i> Computer-controlled testing</li>
@@ -2113,8 +2159,8 @@
                         <i class="fas fa-database"></i>
                     </div>
                     <div class="manufacturing-details">
-                        <h3>Big Data Analytics</h3>
-                        <p>Data-driven quality control system monitors production parameters in real-time to ensure optimal capacitor performance.</p>
+                        <h3>Big Data Analytics for Capacitor Quality</h3>
+                        <p>Data-driven quality control system monitors aluminum electrolytic capacitor production parameters in real-time to ensure optimal performance, reliability, and consistency.
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle"></i> IoT-connected production</li>
                             <li><i class="fas fa-check-circle"></i> Predictive maintenance</li>
@@ -2128,8 +2174,8 @@
                         <i class="fas fa-tachometer-alt"></i>
                     </div>
                     <div class="manufacturing-details">
-                        <h3>High Production Capacity</h3>
-                        <p>With monthly production capacity of over 300 Thousand Pcs, we can fulfill large orders with short lead times.</p>
+                        <h3>High Aluminum Electrolytic Capacitor Production Capacity</h3>
+                        <p>With monthly production capacity of over 300 Thousand aluminum electrolytic capacitors, we can fulfill large orders with short lead times for various applications.
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle"></i> 24/7 production capability</li>
                             <li><i class="fas fa-check-circle"></i> Multiple production lines</li>
@@ -2141,37 +2187,37 @@
             
             <!-- Manufacturing Process Flow -->
             <div class="process-flow">
-                <h3>Our Manufacturing Process</h3>
+                <h3>Aluminum Electrolytic Capacitor Manufacturing Process</h3>
                 <div class="process-steps">
                     <div class="process-step">
                         <div class="step-circle">1</div>
                         <div class="step-content">
-                            <h4>Raw Material Preparation</h4>
-                            <p>Pure aluminum foil processing and electrolyte formulation</p>
+                            <h4>Aluminum Foil & Electrolyte Preparation</h4>
+                            <p>High-purity aluminum foil processing and specialized electrolyte formulation for aluminum electrolytic capacitors
                         </div>
                     </div>
                     <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
                     <div class="process-step">
                         <div class="step-circle">2</div>
                         <div class="step-content">
-                            <h4>Anode Formation</h4>
-                            <p>Chemical processing to create oxide layer</p>
+                            <h4>Aluminum Anode Formation</h4>
+                            <p>Precise chemical processing to create uniform oxide layer for high-performance aluminum electrolytic capacitors
                         </div>
                     </div>
                     <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
                     <div class="process-step">
                         <div class="step-circle">3</div>
                         <div class="step-content">
-                            <h4>Winding & Assembly</h4>
-                            <p>Precision winding of capacitor elements</p>
+                            <h4>Capacitor Winding & Assembly</h4>
+                            <p>Precision winding of aluminum electrolytic capacitor elements with strict quality control at each stage
                         </div>
                     </div>
                     <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
                     <div class="process-step">
                         <div class="step-circle">4</div>
                         <div class="step-content">
-                            <h4>Quality Testing</h4>
-                            <p>Comprehensive performance verification</p>
+                            <h4>Comprehensive Aluminum Electrolytic Capacitor Testing</h4>
+                            <p>Rigorous performance verification including capacitance, voltage, ripple current, and life span testing
                         </div>
                     </div>
                 </div>
@@ -2238,8 +2284,8 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Contact us today for a quote or to learn more about our capacitor products and services</p>
+            <h2>Ready to Get Premium Aluminum Electrolytic Capacitors?</h2>
+            <p>Contact us today for a quote or to learn more about our high-quality aluminum electrolytic capacitor products and manufacturing services
             <a href="#contact" class="btn btn-primary">Contact Us Now</a>
         </div>
     </section>
@@ -2255,7 +2301,7 @@
                         </div>
                         <span class="logo-text">HUAYU</span>
                     </a>
-                    <p>Professional capacitor manufacturer with years of experience in the industry.</p>
+                    <p>Professional aluminum electrolytic capacitor manufacturer with 38 years of experience, specializing in snap-in and screw terminal capacitors.
                     <div class="social-links">
                         <a href="#" class="social-link">
                             <i class="fab fa-facebook-f"></i>
@@ -2277,15 +2323,14 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#products">Products</a></li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h3>Our Products</h3>
                     <ul>
-                        <li><a href="#products">Snap-in Capacitors</a></li>
-                        <li><a href="#products">Screw Terminal Capacitors</a></li>
-                        <li><a href="#technical-docs">Technical Documents</a></li>
+                        <li><a href="#products">High Performance Snap-in Aluminum Electrolytic Capacitors</a></li>
+                        <li><a href="#products">Powerful Screw Terminal Aluminum Electrolytic Capacitors</a></li>
+                        <li><a href="#technical-docs">Aluminum Electrolytic Capacitor Technical Documents</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -2343,6 +2388,7 @@
                     
                     // Reset dropdown for desktop
                     if (dropdownContent) {
+                        dropdownContent.classList.remove('show');
                         dropdownContent.style.display = '';
                     }
                 }
@@ -2357,19 +2403,68 @@
                     // Toggle dropdown visibility on mobile
                     if (window.innerWidth <= 768) {
                         if (dropdownContent.style.display === 'block') {
+                            dropdownContent.classList.remove('show');
                             dropdownContent.style.display = 'none';
                         } else {
+                            dropdownContent.classList.add('show');
                             dropdownContent.style.display = 'block';
                         }
                     }
                 });
                 
                 // Close dropdown when clicking elsewhere
-                document.addEventListener('click', () => {
-                    if (window.innerWidth <= 768 && dropdownContent) {
-                        dropdownContent.style.display = 'none';
+                document.addEventListener('click', (e) => {
+                    // 检查点击目标是否在下拉菜单或其内部
+                    if (!dropdown.contains(e.target) && dropdownContent) {
+                        if (window.innerWidth <= 768) {
+                            dropdownContent.classList.remove('show');
+                            dropdownContent.style.display = 'none';
+                        }
                     }
                 });
+                
+                // 优化下拉菜单悬停检测逻辑
+                let hideTimeout;
+                
+                // 显示下拉菜单
+                function showDropdown() {
+                    if (hideTimeout) {
+                        clearTimeout(hideTimeout);
+                    }
+                    if (window.innerWidth > 768) {
+                        dropdownContent.classList.add('show');
+                        dropdownContent.style.display = 'block';
+                    }
+                }
+                
+                // 延迟隐藏下拉菜单
+                function hideDropdown() {
+                    hideTimeout = setTimeout(() => {
+                        if (window.innerWidth > 768) {
+                            dropdownContent.classList.remove('show');
+                            dropdownContent.style.display = 'none';
+                        }
+                    }, 200); // 调整延迟时间
+                }
+                
+                // 增强事件监听器，确保在各种情况下都能正确显示和隐藏
+                dropdown.addEventListener('mouseenter', showDropdown);
+                dropdown.addEventListener('mouseleave', hideDropdown);
+                dropdownContent.addEventListener('mouseenter', showDropdown);
+                dropdownContent.addEventListener('mouseleave', hideDropdown);
+                
+                // 为Contact链接添加事件监听，确保点击时也能显示下拉菜单
+                const contactLink = dropdown.querySelector('a.nav-link');
+                if (contactLink) {
+                    contactLink.addEventListener('mouseenter', showDropdown);
+                    contactLink.addEventListener('click', (e) => {
+                        // 在桌面端，点击Contact链接时不执行默认跳转，只显示下拉菜单
+                        if (window.innerWidth > 768) {
+                            e.preventDefault();
+                            showDropdown();
+                        }
+                    });
+                }
             }
         }
 
